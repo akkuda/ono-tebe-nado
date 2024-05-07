@@ -1,1 +1,121 @@
-/* место для вашего кода */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  margin: 92px 24px 96px;
+  text-underline-offset: 4px
+}
+
+.header__logo {
+  width: 148px;
+  height: 105px;
+}
+
+.header_menu {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+}
+
+.header__links-list-item {
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__address {
+  align-items: start;
+  margin-left: 184px;
+}
+
+.cover {
+  background-image: url(/images/cover.jpg);
+  position: relative;
+  background-size: cover;
+  z-index: 0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.cover__title {
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 30px;
+  z-index: 1;
+  padding-top: 165px;
+}
+
+.aligned-text {
+  text-align: center;
+  display: block;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+  padding-bottom: 135px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: none;
+  padding-right: 50px;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 62px;
+  margin-left: 71px;
+}
+
+.cover__description-text {
+  word-spacing: 24.2px;
+}
+
+.bet-button {
+  font-weight: 500;
+  font-size: 22px;
+  border: 1px solid;
+  padding: 12px 32px 11px 31px;
+}
